@@ -4,8 +4,16 @@
     background-color: #121223;
 }
 
-html{
-    overflow: hidden;
+html, body {
+  overflow-y: scroll;
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE 10+ */
+}
+
+/* Hide scrollbar for Chrome, Edge, Safari */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .hero {
@@ -55,8 +63,14 @@ html{
 
 .box2{
     background-color: #141350;
+    /* border-style: solid; */
+    border-width: 0 100px 100px 100px;
+    border-color: transparent transparent #141350 transparent;
 }
 
 .box1{
     background-color: #251740;
+    /* border-style: solid; */
+    border-width: 0 200px 300px 50px;
+    border-color: transparent transparent #251740 transparent;
 }
