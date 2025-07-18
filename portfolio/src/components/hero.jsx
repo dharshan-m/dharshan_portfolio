@@ -1,18 +1,30 @@
 import React from 'react'
+import Image from '../assets/Imagem.png'
 
 export default function hero() {
   return (
-    <>
-    <div className='hero w-[1400px] h-[500px] pl-30 mt-5 ml-17 rounded-xl z-1'>
-        <div className='text-white pt-7'>
-            <h1 className='text-9xl font-bold mb-10'>Hi, I'm Dharshan<span className="inline-block animate-wave">👋</span></h1>
-            <h3 className='text-6xl font-light mb-2'>I build modern websites, web</h3>
-            <h3 className='text-6xl font-light mb-20'>apps & mobile apps.</h3>
-            <button className='outline-solid rounded-xl text-2xl pt-2 pb-2 pr-6 pl-5 cursor-poniter'>View my work</button>
+    <div className='flex flex-row justify-between pl-15 pr-15 pt-15 pb-25 bg-[#F5FCFF]'>
+        <div className='flex flex-col gap-5 pt-30'>
+          <div>
+            <p className='font-semibold'>Hey, I am Dharshan</p>
+          </div>
+          <div className='flex flex-col gap-3'>
+            <div className='flex flex-row gap-5'>
+              <h1 className='text-6xl font-bold'>I create</h1>
+              <h1 className='text-[#5E3BEE] text-6xl font-bold'>dynamic apps </h1>
+            </div>
+            <h1 className='text-6xl font-bold'>and streamline UI.</h1>
+          </div>
+          <div>
+            <p className='text-md w-[400px]'>I build dynamic applications, optimize performance, and enhance user experience with clean, efficient code.</p>
+          </div>
+          <div className='pt-7'>
+            <button className='bg-[#5E3BEE] text-xl text-white rounded p-2 '>Get In Touch</button>
+          </div>
+        </div>
+        <div>
+          <img className='w-[700px]' src={Image} alt='Image'/>
         </div>
     </div>
-    <div className='box1 w-[0px] h-[0px] absolute ml-[100px] mt-[-400px] border-solid'></div>
-    <div className='box2 w-[0px] h-[0px] absolute ml-[1200px] mt-[-200px] border-solid'></div>
-    </>
   )
 }
